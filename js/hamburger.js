@@ -5,6 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menuBtn.addEventListener('click', () => {
         // クラスを切り替えてスタイルを変更
         menuBtn.classList.toggle('open');
-        globalMenu.style.display = globalMenu.style.display === 'block' ? 'none' : 'block';
+        globalMenu.classList.toggle('open');
     });
 });
