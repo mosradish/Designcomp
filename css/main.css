@@ -36,6 +36,9 @@ ul {
     height: 620px;
     display: flex;
     flex-wrap: wrap;
+    background-image: url(../src/img/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .fix_container {
@@ -60,7 +63,7 @@ ul {
 
 .global {
     display: none;
-    position: absolute;
+    width: 100%;
     background: rgba(255, 255, 255, 0.8);
 }
 
@@ -128,3 +131,34 @@ ul {
     max-height: 620px;
 }
 
+.title_container {
+    position: absolute;
+    width: 280px;
+    height: 120px;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 12rem;
+    margin: 0;
+    line-height: 120px;
+}
+
+.subtitle_container {
+    position: absolute;
+    width: 143px;
+    height: 16px;
+    top: 360px;
+}
+
+.myriad-pro {
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
