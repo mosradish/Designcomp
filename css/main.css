@@ -343,7 +343,7 @@ a:visited {
 }
 
 .florist_name {
-    width: 115px;
+    max-width: 115px;
     height: 40px;
     font: normal normal bold 24px/40px Poppins;
     letter-spacing: 0px;
@@ -351,12 +351,20 @@ a:visited {
 }
 
 .florist_about {
-    width: 300px;
+    max-width: 300px;
     height: 108px;
     font: normal normal normal 16px/19px Myriad Pro;
     letter-spacing: 0px;
     color: var(--about-color);
     margin-bottom: 40px;
+}
+
+.flex3_c {
+    margin: 0 30px;
+}
+
+.flex3_l, .flex3_c, .flex3_r {
+    max-width: 300px;
 }
 
 /************************************************/
@@ -482,14 +490,6 @@ a:visited {
     margin: auto;
     max-width: 960px;
     justify-content: center;
-}
-
-.flex3_c {
-    margin: 0 30px;
-}
-
-.flex3_l, .flex3_c, .flex3_r {
-    width: 300px;
 }
 
 .hr_box {
