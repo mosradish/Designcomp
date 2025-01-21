@@ -3,6 +3,7 @@ html,body,header,section,p,div,ul,li,dl,dt,dd,footer,address,h1,h2,h3,h4 {margin
 article,aside,footer,header,nav,section {display:block}
 
 :root {
+    /* colors */
     --link-color: #434343;
     --main-title-color: #FFFFFF;
     --bg-color : #FFFFFF;
@@ -12,6 +13,10 @@ article,aside,footer,header,nav,section {display:block}
     --hr-bg-color: #EDEDED;
     --table-border-color: #A0A0A0;
     --mail-icon-color: #707070;
+    
+    /* sizes */
+    --fix-container-height: 64px;
+    --fix-top-height: calc(40px + var(--fix-container-height));
 }
 
 /* Base */
@@ -66,7 +71,7 @@ a:visited {
     top: 40px;
     position: fixed;
     width: 100%;
-    height: 64px;
+    height: var(--fix-container-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,9 +92,9 @@ a:visited {
 
 .acordion {
     width: 100vw;
-    height: calc(100vh - 104px);
+    height: calc(100vh - var(--fix-top-height));
     position: fixed;
-    top: 104px;
+    top: var(--fix-top-height);
     left: 0;
     z-index: 2;
 }
