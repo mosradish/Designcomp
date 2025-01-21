@@ -246,6 +246,7 @@ a:visited {
 /* content */
 
 #main_wrapper {
+    background-color: var(--bg-color);
     padding: 0 12.5%;
 }
 
