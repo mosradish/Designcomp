@@ -295,12 +295,14 @@ a:visited {
 
 .concept_img_container {
     margin: 0 auto 182px auto;
+    width: 100%;
     max-width: 960px;
     height: 400px;
 }
 
 .concept_img_container img {
     margin: auto;
+    width: 100%;
     max-width: 960px;
     height: 400px;
     object-fit: cover;
@@ -466,7 +468,8 @@ a:visited {
     border: 1px solid var(--mail-icon-color);
 }
 .mail_icon::after {
-    top: -10px;
+    /* borderの1px分+する */
+    top: calc(-20px / 2 + 1px);
     left: 85px;
     width: 20px;
     border-right: 1px solid var(--mail-icon-color);
