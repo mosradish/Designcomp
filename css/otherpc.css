@@ -1,0 +1,47 @@
+/* tablet */
+
+@media (max-width: 1024px) {
+    .fix_title {
+        font-size: clamp(5rem, calc(50px - 10vw), 3.6rem);
+        line-height : clamp(5.7rem, calc(50px - 10vw), 4.3rem);
+    }
+
+    #menu_btn {
+        width: 48px;
+    }
+
+    .menu_bar {
+        width: 48px;
+        height: 3px;
+    }
+
+    .menu_bar::before, .menu_bar::after {
+        width: 48px;
+        height: 3px;
+    }
+
+    .menu_bar::before {
+        top: -10px;
+    }
+    
+    .menu_bar::after {
+        top: 10px;
+    }
+
+    #menu_btn.open .menu_bar::before {
+        transform: rotate(45deg) translate(8px, 7px);
+    }
+    
+    #menu_btn.open .menu_bar::after {
+        transform: rotate(-45deg) translate(8px, -7px);
+    }
+ 
+    .fix_container {
+        padding : 0 calc((100% - 960px) / 2 + 5vw);
+    }
+
+    .global ul li {
+        font-size: clamp(3.2rem, calc(50px - 10vw), 1.8rem);
+        line-height : clamp(3.6rem, calc(50px - 10vw), 2.2rem);
+    }
+}

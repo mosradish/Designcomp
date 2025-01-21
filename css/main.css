@@ -144,15 +144,14 @@ a:visited {
 
 .menu_bar {
     position: relative;
-    width : 32px;
+    width: 32px;
     height: 1px;
     content: "";
     background-color: var(--bg-color);
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.menu_bar::before,
-.menu_bar::after {
+.menu_bar::before, .menu_bar::after {
     content: "";
     position: absolute;
     width: 32px;
