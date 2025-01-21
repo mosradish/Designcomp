@@ -7,7 +7,7 @@ $(document).ready(function () {
             $('.slick_change').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows: false,
+                arrows: true,
                 dots: true,
             });
             slickInitialized = true;
