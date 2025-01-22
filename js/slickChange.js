@@ -6,10 +6,22 @@ $(document).ready(function () {
         if ($(window).width() <= breakpoint && !slickHidden) {
             $('.slick_change').css('display', 'none');
             slickHidden = true;
-            $('.slick_slide').slick({
+            $('.slick_slides_works').slick({
                 slidesToShow: 1,
                 centerMode: true,
                 centerPadding: "25%",
+                slidesToScroll: 1,
+                arrows: true,
+                dots: true,
+                autoplay: false,
+                infinite: true,
+                speed: 500,
+            });
+
+            $('.slick_slides_florist').slick({
+                slidesToShow: 1,
+                centerMode: true,
+                centerPadding: "30%",
                 slidesToScroll: 1,
                 arrows: true,
                 dots: true,

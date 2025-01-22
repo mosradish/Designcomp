@@ -91,7 +91,12 @@
     /************************************************/
     /* slick */
 
-    .slick_slide {
+    .slick_slides_works {
+        width: 100%;
+        display: block;
+    }
+
+    .slick_slides_florist {
         width: 100%;
         display: block;
     }
@@ -102,19 +107,20 @@
 
     .slide-items-work img {
         max-width: 420px;
-        max-height: 420px;
+        height: 420px;
         object-fit: cover;
     }
 
-    .florist_about {
-        max-width: 420px;
-    }
     .slide-items-florist {
-        max-width: 420px;
+        max-width: 300px;
+    }
+
+    .florist_about {
+        max-width: 300px;
     }
 
     .slide-items-florist img {
-        max-width: 420px;
+        max-width: 300px;
         object-fit: cover;
     }
 
