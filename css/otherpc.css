@@ -140,7 +140,7 @@
         height: 2em;
         bottom: 0px;
         z-index: 1;
-        pointer-events: auto;
+        cursor: pointer;
     }
     
     .slick-dots li button {
