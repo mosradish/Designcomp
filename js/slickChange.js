@@ -7,7 +7,7 @@ $(document).ready(function () {
             $('.slick_slides_works').slick({
                 slidesToShow: 1,
                 centerMode: true,
-                centerPadding: "230px",
+                centerPadding: "50% + 20px",
                 slidesToScroll: 1,
                 arrows: false,
                 dots: true,
@@ -20,7 +20,7 @@ $(document).ready(function () {
             $('.slick_slides_florist').slick({
                 slidesToShow: 1,
                 centerMode: true,
-                centerPadding: "170px",
+                centerPadding: "50% + 20px",
                 slidesToScroll: 1,
                 arrows: false,
                 dots: true,
