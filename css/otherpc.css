@@ -76,14 +76,5 @@
         margin: 20px auto 16px auto;
         border-spacing: 16px 12px;
     }
-
-    /* slick */
-    .slick-slider {
-        max-width: 100%;
-    }
-
-    .slick-slide img {
-        display: block;
-        margin: auto;
-    }
+    
 }

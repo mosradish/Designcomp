@@ -1,25 +1,20 @@
 $(document).ready(function () {
     const breakpoint = 1024; // モバイルサイズの基準
-    let slickInitialized = false;
+    let slickHidden = false;
 
-    function initializeSlick() {
-        if ($(window).width() <= breakpoint && !slickInitialized) {
-            $('.slick_change').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: true,
-                dots: true,
-            });
-            slickInitialized = true;
-        } else if ($(window).width() > breakpoint && slickInitialized) {
-            $('.slick_change').slick('unslick'); // スライダー解除
-            slickInitialized = false;
+    function toggleDisplay() {
+        if ($(window).width() <= breakpoint && !slickHidden) {
+            $('.slick_change').css('display', 'none'); // 非表示に設定
+            slickHidden = true;
+        } else if ($(window).width() > breakpoint && slickHidden) {
+            $('.slick_change').css('display', ''); // デフォルト表示に戻す
+            slickHidden = false;
         }
     }
 
     // 初期化
-    initializeSlick();
+    toggleDisplay();
 
     // リサイズ時にチェック
-    $(window).resize(initializeSlick);
+    $(window).resize(toggleDisplay);
 });
