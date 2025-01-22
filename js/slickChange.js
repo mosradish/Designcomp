@@ -20,7 +20,7 @@ $(document).ready(function () {
             $('.slick_slides_florist').slick({
                 slidesToShow: 1,
                 centerMode: true,
-                centerPadding: "25%",
+                centerPadding: "30%",
                 slidesToScroll: 1,
                 arrows: false,
                 dots: true,
