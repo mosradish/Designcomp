@@ -146,8 +146,6 @@
         color: black;
         cursor: pointer;
         font-size: 2.5rem;
-        font-family: "Font Awesome 5 Free"; /* Font Awesomeのフォント指定 */
-        font-weight: 900; /* Font AwesomeのSolidを使用 */
-        content: "\f219"; /* ダイヤモンドアイコンのUnicode */
+        content: "●";
     }
 }
