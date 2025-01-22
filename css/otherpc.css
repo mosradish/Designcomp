@@ -2,6 +2,7 @@
 
 @media (max-width: 1024px) {
 
+    /************************************************/
     /* header */
 
     .fix_container {
@@ -48,12 +49,16 @@
         line-height : clamp(3.6rem, calc(50px - 10vw), 2.2rem);
     }
 
+    /************************************************/
     /* content */
+
     .about {
         text-align: left;
     }
 
+    /************************************************/
     /* shop */
+
     .flex2_l_shop {
         width: 100%;
         max-width: 960px;
@@ -76,5 +81,73 @@
         margin: 20px auto 16px auto;
         border-spacing: 16px 12px;
     }
+
+    /************************************************/
+    /* work */
+    .work_about {
+        width: 420px
+    }
+
+    /************************************************/
+    /* slick */
+
+    .slick_slide {
+        width: 100%;
+        display: block;
+    }
+
+    .slide-items-work {
+        max-width: 420px;
+    }
+
+    .slide-items-work img {
+        max-width: 420px;
+        max-height: 420px;
+        object-fit: cover;
+    }
+
+    .florist_about {
+        max-width: 420px;
+    }
+    .slide-items-florist {
+        max-width: 420px;
+    }
+
+    .slide-items-florist img {
+        max-width: 420px;
+        object-fit: cover;
+    }
+
+    .slick-dots {
+        width: 100%;
+        position: absolute;
+        bottom: -40px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+        font-size: 2.5rem;
+        height: 2em;
+        bottom: 0px;
+        z-index: 1;
+        pointer-events: auto;
+    }
     
+    .slick-dots li button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        line-height: 2em;
+    }
+    
+    .slick-dots li button:before {
+        display: flex;
+        color: black;
+        cursor: pointer;
+        font-size: 2.5rem;
+        font-family: "Font Awesome 5 Free"; /* Font Awesomeのフォント指定 */
+        font-weight: 900; /* Font AwesomeのSolidを使用 */
+        content: "\f219"; /* ダイヤモンドアイコンのUnicode */
+    }
 }

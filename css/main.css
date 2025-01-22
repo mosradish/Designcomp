@@ -563,3 +563,10 @@ a:visited {
     font-weight: 400;
     font-style: normal;
 }
+
+/************************************************/
+/* slick */
+
+.slick-slider {
+    display: none;
+}

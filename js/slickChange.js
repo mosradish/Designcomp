@@ -4,10 +4,21 @@ $(document).ready(function () {
 
     function toggleDisplay() {
         if ($(window).width() <= breakpoint && !slickHidden) {
-            $('.slick_change').css('display', 'none'); // 非表示に設定
+            $('.slick_change').css('display', 'none');
             slickHidden = true;
+            $('.slick_slide').slick({
+                slidesToShow: 1,
+                centerMode: true,
+                centerPadding: "25%",
+                slidesToScroll: 1,
+                arrows: true,
+                dots: true,
+                autoplay: false,
+                infinite: true,
+                speed: 500,
+            });
         } else if ($(window).width() > breakpoint && slickHidden) {
-            $('.slick_change').css('display', ''); // デフォルト表示に戻す
+            $('.slick_change').css('display', '');
             slickHidden = false;
         }
     }
