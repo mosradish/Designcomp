@@ -136,11 +136,8 @@
 
     .work_about {
         width: 100%;
+        height: auto;
         max-width: 420px;
-    }
-
-    .work_about p {
-        overflow: hidden;
     }
 
     .slide_items_work img {
@@ -165,11 +162,8 @@
 
     .florist_about {
         width: 100%;
+        height: auto;
         max-width: 300px;
-    }
-
-    .florist_about p {
-        overflow: hidden;
     }
 
     .slide_items_florist img {
