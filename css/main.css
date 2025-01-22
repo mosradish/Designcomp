@@ -108,7 +108,12 @@ a:visited {
 }
 
 .global {
-    height: calc(100vh - 104px);
+    width: 100vw;
+    height: calc(100vh - var(--fix-top-height));
+    position: fixed;
+    top: var(--fix-top-height);
+    left: 0;
+    z-index: 2;
     background: rgba(255, 255, 255, 0.9);
     transition: transform 0.3s ease-in-out;
     transform: translateY(-150%);
@@ -328,6 +333,7 @@ a:visited {
 }
 
 .work_about {
+    max-width: 420px;
     height: 84px;
     margin-bottom: 80px;
     font: normal normal normal 1.6rem/2.8rem Myriad Pro, Regular;
@@ -446,7 +452,7 @@ a:visited {
 }
 
 .contact_box {
-    width: 360px;
+    max-width: 360px;
     height: 80px;
     margin: 0 auto 100px auto;
     border : solid 1px var(--table-border-color);
@@ -468,7 +474,7 @@ a:visited {
     position: absolute;
     left: 134px;
     font: normal normal normal 2rem/2.4rem Myriad Pro;
-    width: 120px;
+    max-width: 120px;
     height: 20px;
     letter-spacing: 0px;
     color: var(--about-color);
@@ -567,6 +573,10 @@ a:visited {
 /************************************************/
 /* slick */
 
-.slick-slider {
+.slick_slides_works {
+    display: none;
+}
+
+.slick_slides_florist {
     display: none;
 }

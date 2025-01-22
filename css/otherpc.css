@@ -83,55 +83,19 @@
     }
 
     /************************************************/
-    /* work */
-    .work_about {
-        width: 420px
-    }
-
-    /************************************************/
     /* slick */
 
-    .slick_slides_works {
-        width: 100%;
-        display: block;
+    .slick_change {
+        display: none;
     }
 
-    .slick_slides_florist {
-        width: 100%;
-        display: block;
+    .slide-items {
+        padding: 0 10px;
     }
 
-    .slide-items-work {
-        max-width: 420px;
-    }
-
-    .slide-items-work img {
-        max-width: 420px;
-        height: 420px;
-        object-fit: cover;
-    }
-
-    .slide-items-florist {
-        max-width: 300px;
-    }
-
-    .work_about {
-        max-width: 420px;
-    }
-
-    .florist_about {
-        max-width: 300px;
-    }
-
-    .slide-items-florist img {
-        max-width: 300px;
-        object-fit: cover;
-    }
-
+    
     .slick-dots {
         width: 100%;
-        position: absolute;
-        bottom: -40px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -139,8 +103,6 @@
         font-size: 2.5rem;
         height: 2em;
         bottom: 0px;
-        z-index: 1;
-        cursor: pointer;
     }
     
     .slick-dots li button {
@@ -158,4 +120,54 @@
         font-size: 2.5rem;
         content: "●";
     }
+
+    /* work */
+
+    .slick_slides_works {
+        width: 100%;
+        display: block;
+    }
+
+    .slide_items_work {
+        width: 100%;
+        padding: 0 10px;
+        max-width: 420px;
+    }
+
+    .work_about {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .slide_items_work img {
+        width: 100%;
+        max-width: 420px;
+        height: 420px;
+        object-fit: cover;
+    }
+
+    /* florist */
+
+    .slick_slides_florist {
+        width: 100%;
+        display: block;
+    }
+
+    .slide_items_florist {
+        width: 100%;
+        padding: 0 10px;
+        max-width: 300px;
+    }
+
+    .florist_about {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .slide_items_florist img {
+        width: 100%;
+        max-width: 300px;
+        object-fit: cover;
+    }
+
 }
