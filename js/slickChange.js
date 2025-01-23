@@ -4,7 +4,7 @@ $(document).ready(function () {
     function toggleDisplay() {
         if ($(window).width() <= breakpoint) {
 
-            let imageWidth = $('.slick_slides_florist img').width(); // 画像の幅を取得
+            let imageWidth = $('.slick_slides_works img').width(); // 画像の幅を取得
             let centerPadding = (imageWidth / 2) + 20 + 'px'; // 画像の半分 + 20px
             
             $('.slick_slides_works').slick({
