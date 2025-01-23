@@ -4,10 +4,13 @@ $(document).ready(function () {
     function toggleDisplay() {
         if ($(window).width() <= breakpoint) {
 
+            let imageWidth = $('.slick_slides_florist img').width(); // 画像の幅を取得
+            let centerPadding = (imageWidth / 2) + 20 + 'px'; // 画像の半分 + 20px
+            
             $('.slick_slides_works').slick({
                 slidesToShow: 1,
                 centerMode: true,
-                centerPadding: "25% + 20px",
+                centerPadding: centerPadding,
                 slidesToScroll: 1,
                 arrows: false,
                 dots: true,
@@ -17,10 +20,13 @@ $(document).ready(function () {
                 draggable: true,
             });
 
+            imageWidth = $('.slick_slides_florist img').width(); // 画像の幅を取得
+            centerPadding = (imageWidth / 2) + 20 + 'px'; // 画像の半分 + 20px
+
             $('.slick_slides_florist').slick({
                 slidesToShow: 1,
                 centerMode: true,
-                centerPadding: "25% + 20px",
+                centerPadding: centerPadding,
                 slidesToScroll: 1,
                 arrows: false,
                 dots: true,
