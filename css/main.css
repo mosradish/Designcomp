@@ -369,7 +369,7 @@ a:visited {
 .florist_name {
     max-width: 115px;
     height: 40px;
-    font: normal normal bold 24px/40px Poppins;
+    font: normal normal bold 2.4rem/4rem Poppins;
     letter-spacing: 0px;
     color: var(--sub-title-color);
 }
@@ -377,7 +377,7 @@ a:visited {
 .florist_about {
     max-width: 300px;
     height: 108px;
-    font: normal normal normal 16px/19px Myriad Pro;
+    font: normal normal normal 1.6rem/1.9rem Myriad Pro;
     letter-spacing: 0px;
     color: var(--about-color);
     margin-bottom: 40px;
