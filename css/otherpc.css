@@ -151,7 +151,6 @@
     .slide_items_work img {
         width: calc(100% - 5px);
         max-width: 420px;
-        height: 420px;
         object-fit: cover;
     }
 
