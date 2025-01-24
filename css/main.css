@@ -545,7 +545,6 @@ a:visited {
 
 .hr_box2 {
     position: absolute;
-    width: 100vw;
     background-color: var(--hr-bg-color);
     height: 374px;
     top: -80px;

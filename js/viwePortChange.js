@@ -9,7 +9,7 @@ function adjustViewport() {
         meta.content = 'width=device-width, initial-scale=1';
         document.head.appendChild(meta);
       } else {
-        viewportMeta.setAttribute('content', 'width=250, initial-scale=1');
+        viewportMeta.setAttribute('content', 'width=480, initial-scale=1');
       }
     } else {
       if (viewportMeta) {
