@@ -17,7 +17,7 @@ $(document).ready(function () {
             function initSlider() {
                 const imageWidth = imgElement.width(); // 画像の幅を取得
                 const viewportWidth = $(window).width(); // ビューポートの幅を取得
-                const centerPadding = (imageWidth / 2) + (2 * (viewportWidth / 100)) + 'px'; // 画像の半分 + 2vw
+                const centerPadding = (imageWidth / 2) + 'px';
 
                 if ($(sliderClass).length && !$(sliderClass).hasClass('slick-initialized')) {
                     $(sliderClass).slick({
