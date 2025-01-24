@@ -134,6 +134,7 @@
 
     .slide_items_work {
         width: calc(100% - 2vw);
+        position: relative;
         padding: 0 1vw;
         max-width: 420px;
     }
@@ -167,6 +168,7 @@
 
     .slide_items_florist {
         width: calc(100% - 2vw);
+        position: relative;
         padding: 0 1vw;
         max-width: 300px;
     }
