@@ -6,7 +6,7 @@
     /* header */
 
     .fix_container {
-        padding: 0 12.5%;
+        padding: 0 12.5vw;
     }
     
     .fix_title {
@@ -61,15 +61,16 @@
     /************************************************/
     /* shop */
 
-    .flex2_l_shop {
+    .flex2_l_shop , .flex2_r_shop {
         width: 100%;
         max-width: 960px;
+    }
+
+    .flex2_l_shop {
         margin: auto;
     }
 
     .flex2_r_shop {
-        width: 100%;
-        max-width: 960px;
         margin: 0 auto 120px auto;
     }
 
@@ -132,7 +133,6 @@
     }
 
     .slide_items_work {
-        position: relative;
         width: calc(100% - 10px);
         padding: 0 5px;
         max-width: 420px;
@@ -153,8 +153,7 @@
     }
 
     .slide_items_work img {
-        width: 100%;
-        max-width: 420px;
+        max-width: 100%;
         object-fit: cover;
     }
 
@@ -168,7 +167,6 @@
 
     .slide_items_florist {
         width: calc(100% - 10px);
-        position: relative;
         padding: 0 5px;
         max-width: 300px;
     }
@@ -180,8 +178,7 @@
     }
 
     .slide_items_florist img {
-        width: 100%;
-        max-width: 300px;
+        max-width: 100%;
         object-fit: cover;
     }
 
