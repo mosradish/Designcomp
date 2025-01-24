@@ -2,14 +2,14 @@ function adjustViewport() {
     const viewportMeta = document.querySelector('meta[name="viewport"]');
     const screenWidth = window.innerWidth;
   
-    if (screenWidth <= 250) {
+    if (screenWidth <= 1280) {
       if (!viewportMeta) {
         const meta = document.createElement('meta');
         meta.name = 'viewport';
         meta.content = 'width=device-width, initial-scale=1';
         document.head.appendChild(meta);
       } else {
-        viewportMeta.setAttribute('content', 'width=480, initial-scale=1');
+        viewportMeta.setAttribute('content', 'width=1280, initial-scale=1');
       }
     } else {
       if (viewportMeta) {
