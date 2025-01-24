@@ -2,7 +2,6 @@ $(document).ready(function () {
     const breakpoint = 1024; // モバイルサイズの基準
 
     function initializeSlick(sliderClass, imageSelector) {
-        // 画像の読み込みが完了した後に処理を行う
         $(imageSelector).each(function () {
             const imgElement = $(this);
 
@@ -16,7 +15,8 @@ $(document).ready(function () {
             }
 
             function initSlider() {
-                let imageWidth = imgElement.width(); // 画像の幅を取得
+                const imageWidth = imgElement.width(); // 画像の幅を取得
+                const viewportWidth = $(window).width(); // ビューポートの幅を取得
                 const centerPadding = (imageWidth / 2) + (2 * (viewportWidth / 100)) + 'px'; // 画像の半分 + 2vw
 
                 if ($(sliderClass).length && !$(sliderClass).hasClass('slick-initialized')) {
