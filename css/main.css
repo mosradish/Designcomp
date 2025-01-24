@@ -200,8 +200,8 @@ a:visited {
 
 .title_container {
     position: absolute;
-    max-width: 280px;
-    max-height: 120px;
+    width: 280px;
+    height: 120px;
     top: 240px;
     left: 50%;
     transform: translateX(-50%);
@@ -341,14 +341,14 @@ a:visited {
 }
 
 .flex_l_works {
-    width: calc(50%);
+    width: 50%;
     max-width: 420px;
     margin-right: 60px;
     margin-bottom: 120px;
 }
 
 .flex_r_works {
-    width: calc(50%);
+    width: 50%;
     max-width: 420px;
     margin-top: 120px;
     margin-left: 60px;
@@ -531,7 +531,7 @@ a:visited {
 
 .hr_box, .hr_box2, .hr_box3 {
     position: absolute;
-    width: calc(100% + 25vw);
+    width: 100vw;
     left: -12.5vw;
     z-index: -1;
 }
