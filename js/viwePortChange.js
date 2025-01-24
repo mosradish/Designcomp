@@ -2,11 +2,11 @@ function adjustViewport() {
     const viewportMeta = document.querySelector('meta[name="viewport"]');
     const screenWidth = window.innerWidth;
   
-    if (screenWidth < 240) {
+    if (screenWidth <= 250) {
       if (!viewportMeta) {
         const meta = document.createElement('meta');
         meta.name = 'viewport';
-        meta.content = 'width=240, initial-scale=1';
+        meta.content = 'width=device-width, initial-scale=1';
         document.head.appendChild(meta);
       } else {
         viewportMeta.setAttribute('content', 'width=250, initial-scale=1');
