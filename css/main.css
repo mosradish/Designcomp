@@ -200,8 +200,8 @@ a:visited {
 
 .title_container {
     position: absolute;
-    width: 280px;
-    height: 120px;
+    max-width: 280px;
+    max-height: 120px;
     top: 240px;
     left: 50%;
     transform: translateX(-50%);
@@ -400,14 +400,14 @@ a:visited {
 /* Shop information */
 
 .flex2_l_shop {
-    width: calc(50%);
+    width: 50%;
     max-width: 480px;
     margin-right: 24px;
     margin-bottom: 120px;
 }
 
 .flex2_r_shop {
-    width: calc(45%);
+    width: 45%;
     max-width: 432px;
     height: 320px;
     margin-left: 24px;
