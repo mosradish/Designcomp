@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const breakpoint = 1024; // モバイルサイズの基準
+    const breakpoint = 1280; // モバイルサイズの基準
 
     function initializeSlick(sliderClass, imageSelector) {
         // 画像の読み込みが完了した後に処理を行う
