@@ -54,6 +54,8 @@
 
     .about {
         text-align: left;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
     }
 
     /************************************************/
@@ -121,6 +123,7 @@
         content: "●";
     }
 
+    /************************************************/
     /* work */
 
     .slick_slides_works {
@@ -129,6 +132,7 @@
     }
 
     .slide_items_work {
+        position: relative;
         width: 100%;
         padding: 0 5px;
         max-width: 420px;
@@ -154,6 +158,7 @@
         object-fit: cover;
     }
 
+    /************************************************/
     /* florist */
 
     .slick_slides_florist {
@@ -163,6 +168,7 @@
 
     .slide_items_florist {
         width: 100%;
+        position: relative;
         padding: 0 5px;
         max-width: 300px;
     }
