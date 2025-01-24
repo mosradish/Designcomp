@@ -46,7 +46,6 @@ body {
     background-color: var(--bg-color);
     color : var(--about-color);
     font-size : 1.6rem;
-    overflow: hidden;
     z-index: -1;
 }
 
@@ -530,12 +529,16 @@ a:visited {
     justify-content: center;
 }
 
-.hr_box {
+.hr_box, .hr_box2, .hr_box3 {
     position: absolute;
-    width: 100vw;
+    width: calc(100% + 25vw);
+    left: -12.5vw;
+    z-index: -1;
+}
+
+.hr_box {
     background-color: var(--hr-bg-color);
     height: 240px;
-    left: -12.5vw;
     z-index: -1 ;
     bottom: -102px;
 }
@@ -545,20 +548,14 @@ a:visited {
     width: 100vw;
     background-color: var(--hr-bg-color);
     height: 374px;
-    left: -12.5vw;
-    z-index: -1;
     top: -80px;
 }
 
 .hr_box3 {
-    position: absolute;
-    width: 100vw;
     height: 450px;
     background-image: url(../src/img/contact_us.png);
     background-size: cover;
     background-repeat: no-repeat;
-    left: -12.5vw;
-    z-index: -1;
     top: -80px;
 }
 
