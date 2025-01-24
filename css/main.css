@@ -388,12 +388,12 @@ a:visited {
 }
 
 .flex3_l, .flex3_r {
-    width: calc(33.3% - 7.5px);
+    width: calc(33.3% - 20px);
     max-width: 300px;
 }
 
 .flex3_c {
-    width: calc(33.3% - 15px);
+    width: calc(33.3% - 20px);
     max-width: 300px;
 }
 
