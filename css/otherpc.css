@@ -154,7 +154,8 @@
     }
 
     .slide_items_work img {
-        max-width: 100%;
+        width: 100%;
+        max-width: 420px;
         object-fit: cover;
     }
 
@@ -164,6 +165,7 @@
     .slick_slides_florist {
         width: 100%;
         display: block;
+        padding: 0 1vw;
     }
 
     .slide_items_florist {
@@ -180,7 +182,8 @@
     }
 
     .slide_items_florist img {
-        max-width: 100%;
+        width: 100%;
+        max-width: 300px;
         object-fit: cover;
     }
 
