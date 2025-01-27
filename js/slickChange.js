@@ -18,7 +18,7 @@ $(document).ready(function () {
 
             function initSlider() {
                 let imageWidth = imgElement.width();
-                const centerPadding = (imageWidth / 2) + ((viewportWidth / 100)) + 'px';
+                const centerPadding = (imageWidth / 2) + (viewportWidth / 100) + 'px';
 
                 if ($(sliderClass).length && !$(sliderClass).hasClass('slick-initialized')) {
                     $(sliderClass).slick({
@@ -49,11 +49,11 @@ $(document).ready(function () {
         if (viewportWidth <= breakpoint) {
             // Works スライダー
 
-            $('.slide_items_work').width(worksWidth);
+            $('.slide_items_florist').css('max-width', worksWidth + 'px');
             initializeSlick('.slick_slides_work', '.slide_items_work img');
 
             // Florist スライダー
-            $('.slide_items_florist').width(floristWidth);
+            $('.slide_items_florist').css('max-width', floristWidth + 'px');
             initializeSlick('.slick_slides_florist', '.slide_items_florist img');
         } else {
             // スライダーを破棄

@@ -124,11 +124,12 @@
 
     .slick_slides_work {
         width: 100%;
-        max-width: 100%;
+        max-width: 960px;
         display: block;
     }
 
     .slide_items_work {
+        width: 100%;
         padding: 0 1vw;
     }
 
@@ -160,11 +161,12 @@
 
     .slick_slides_florist {
         width: 100%;
-        max-width: 100%;
+        max-width: 960px;
         display: block;
     }
 
     .slide_items_florist {
+        width: 100%;
         padding: 0 1vw;
     }
 
