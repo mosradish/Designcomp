@@ -122,14 +122,13 @@
     /************************************************/
     /* work */
 
-    .slick_slides_works {
+    .slick_slides_work {
         width: 100%;
         max-width: 100%;
         display: block;
     }
 
     .slide_items_work {
-        max-width: calc(43.75% - 2vw);
         padding: 0 1vw;
     }
 
@@ -166,7 +165,6 @@
     }
 
     .slide_items_florist {
-        max-width: calc(31.25% - 2vw);
         padding: 0 1vw;
     }
 
