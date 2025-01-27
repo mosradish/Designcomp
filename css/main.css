@@ -488,7 +488,7 @@ a:visited {
 .contact_doc p {
     display: inline-block;
     position: absolute;
-    left: 134px;
+    left: calc(30.55% + 24px);
     font: normal normal normal 2rem/2.4rem Myriad Pro;
     max-width: 120px;
     height: 20px;
@@ -507,14 +507,14 @@ a:visited {
 }
 .mail_icon::before {
     top: 0px;
-    left: 80px;
+    left: 22.22%;
     width: 30px;
     border: 1px solid var(--mail-icon-color);
 }
 .mail_icon::after {
     /* borderの1px分+する */
     top: calc(-20px / 2 + 1px);
-    left: 85px;
+    left: calc(22.22% + 5px);
     width: 20px;
     border-right: 1px solid var(--mail-icon-color);
     border-bottom: 1px solid var(--mail-icon-color);
