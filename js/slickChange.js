@@ -6,6 +6,9 @@ $(document).ready(function () {
         $(imageSelector).each(function () {
             const imgElement = $(this);
 
+            // ビューポート幅を取得
+            const viewportWidth = $(window).width();
+
             // 画像の読み込みを確認
             if (!imgElement[0].complete) {
                 imgElement.on('load', function () {
@@ -17,7 +20,7 @@ $(document).ready(function () {
 
             function initSlider() {
                 let imageWidth = imgElement.width(); // 画像の幅を取得
-                 const centerPadding = (imageWidth / 2) + (2 * (viewportWidth / 100)) + 'px'; // 画像の半分 + 2vw
+                const centerPadding = (imageWidth / 2) + (2 * (viewportWidth / 100)) + 'px'; // 画像の半分 + 2vw
 
                 if ($(sliderClass).length && !$(sliderClass).hasClass('slick-initialized')) {
                     $(sliderClass).slick({
@@ -39,7 +42,9 @@ $(document).ready(function () {
     }
 
     function toggleDisplay() {
-        if ($(window).width() <= breakpoint) {
+        const viewportWidth = $(window).width();
+
+        if (viewportWidth <= breakpoint) {
             // Works スライダー
             initializeSlick('.slick_slides_works', '.slide_items_work img');
 
