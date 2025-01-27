@@ -49,10 +49,12 @@ $(document).ready(function () {
         if (viewportWidth <= breakpoint) {
             // Works スライダー
 
-            $('.slide_items_florist').css('max-width', worksWidth + 'px');
+            $('.slide_items_work').width(worksWidth);
+            $('.slide_items_work').css('max-width', workstWidth + 'px');
             initializeSlick('.slick_slides_work', '.slide_items_work img');
 
             // Florist スライダー
+            $('.slide_items_florist').width(floristWidth);
             $('.slide_items_florist').css('max-width', floristWidth + 'px');
             initializeSlick('.slick_slides_florist', '.slide_items_florist img');
         } else {
