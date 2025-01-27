@@ -80,11 +80,19 @@ a:visited {
     position: fixed;
     width: 100%;
     height: var(--fix-container-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding : 0 12.5vw;
     z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fix_div {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 960px;
 }
 
 .fix_title {
@@ -321,11 +329,17 @@ a:visited {
 /************************************************/
 /* works */
 
-.works_container .flex_wrapper img {
+.flex_wrapper img {
     margin-bottom: 16px;
 }
 
-.works_title {
+.works_container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto 16px auto;
+}
+
+.work_title {
     font: normal normal normal 2.4rem/4rem Poppins;
     font-weight: bold;
     color: var(--sub-title-color);

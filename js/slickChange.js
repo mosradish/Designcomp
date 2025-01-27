@@ -1,7 +1,10 @@
 $(document).ready(function () {
     const breakpoint = 1024; // モバイルサイズの基準
+    const slickSlidesWorksWidth = $('.slick_slides_works').width();
+    const slickSlideFloristWidth = $('.slick_slides_florist').width();
 
     function initializeSlick(sliderClass, imageSelector) {
+        // 画像の読み込みが完了した後に処理を行う
         $(imageSelector).each(function () {
             const imgElement = $(this);
 
@@ -15,9 +18,8 @@ $(document).ready(function () {
             }
 
             function initSlider() {
-                const imageWidth = imgElement.width(); // 画像の幅を取得
-                const viewportWidth = $(window).width(); // ビューポートの幅を取得
-                const centerPadding = (imageWidth / 2) + 'px';
+                let imageWidth = imgElement.width(); // 画像の幅を取得
+                 const centerPadding = (imageWidth / 2) + (2 * (viewportWidth / 100)) + 'px'; // 画像の半分 + 2vw
 
                 if ($(sliderClass).length && !$(sliderClass).hasClass('slick-initialized')) {
                     $(sliderClass).slick({
@@ -42,9 +44,12 @@ $(document).ready(function () {
         if ($(window).width() <= breakpoint) {
             // Works スライダー
             initializeSlick('.slick_slides_works', '.slide_items_work img');
+            $('.slick_slides_works').width(slickSlidesWorksWidth * 0.4375);
 
             // Florist スライダー
             initializeSlick('.slick_slides_florist', '.slide_items_florist img');
+            $('.slick_slides_florist').width(slickSlidesFloristsWidth * 0.3125);
+
         } else {
             // スライダーを破棄
             if ($('.slick_slides_works').hasClass('slick-initialized')) {
